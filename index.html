@@ -4,10 +4,18 @@
         <title>Angular ToDo</title>
         <link rel="stylesheet" type="text/css" href="./styles/main.css">
     </head>
-    <body>
-        <header>
-            <h1>Angular ToDo</h1>
-        </header>
+    <body ng-app="TodoApp">
+        <section ng-controller="PastaCtrl">
+          <h1>{{pasta}}</h1>
+          <div>
+            <<input type="text" ng-model ="foods"/>
+            <div>{{foods}}</div>
+          </div>
+        </section>
+        <section ng-controller="TodoCtrl">
+          <h1>{{title}}</h1>
+        </section>
+        <script type="text/javascript" src="/lib/bower_components/angular/angular.min.js"></script>
          <script type="text/javascript" src="/javascripts/main.js"></script>
     </body>
     <footer>
